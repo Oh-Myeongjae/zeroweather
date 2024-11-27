@@ -27,7 +27,6 @@ public class JdbcMemoRepositoryTest {
 
         // when
         jdbcMemoRepository.save(newMemo);
-
         // then
         Optional<Memo> result = jdbcMemoRepository.findById(2);
         assertEquals(result.get().getText(),"insertMemoTest");
